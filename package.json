@@ -1,0 +1,21 @@
+{
+  "name": "aid.css",
+  "version": "0.1.0",
+  "description": "CSS a11y module",
+  "author": "Ryan Van Etten",
+  "license": "MIT",
+  "keywords": [
+    "a11y",
+    "css",
+    "module",
+    "accessibility"
+  ],
+  "homepage": "https://ryanve.github.io/aid.css/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/aid.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanve/aid.css/issues"
+  }
+}

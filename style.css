@@ -1,0 +1,66 @@
+:focus {
+  outline-color: magenta;
+}
+
+:link,
+:visited {
+  color: magenta;
+}
+
+::selection {
+  background: black;
+  color: yellow;
+}
+
+.invert {
+  background: black;
+  color: yellow;
+}
+
+html {
+  background: yellow;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 1.125em/1.612 sans-serif;
+}
+
+@media (max-width: 16rem) {
+  html {
+    font-size: 1em;
+  }
+}
+
+body {
+  margin: auto;
+  padding: 1em;
+  padding: 5vmin;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1;
+}
+
+header,
+section {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.code-block {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.highlight {
+  padding: 0 1rem;
+  text-decoration: none;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
