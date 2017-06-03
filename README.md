@@ -25,11 +25,11 @@ a11y utility classes
 - useful for providing alternative text to icons displayed via pseudocontent
 
 ```html
-<a href="#main" class="aid-replace icon icon-edit">edit</a>
+<a href="#edit" class="aid-replace icon icon-edit">edit</a>
 ```
 
 ```html
-<a href="#main" class="aid-replace sprite sprite-edit">edit</a>
+<a href="#edit" class="aid-replace sprite sprite-edit">edit</a>
 ```
 
 ## setup
