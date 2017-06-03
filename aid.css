@@ -1,8 +1,15 @@
-[data-aid~="hidden"],
-[data-aid~="focusable"],
-[data-aid~="visible"] {
+.aid-replace {
+  font-size: 0;
+  line-height: 0;
+  text-shadow: none;
+  color: transparent;
+}
+
+.aid-tab:not(:focus),
+.aid-hide {
   border: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -10,16 +17,4 @@
   position: absolute;
   width: 1px;
   white-space: nowrap;
-}
-
-[data-aid~="focusable"]:active,
-[data-aid~="focusable"]:focus,
-[data-aid~="visible"] {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
 }

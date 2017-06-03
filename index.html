@@ -18,16 +18,16 @@
 <section>
   <h2>Example</h2>
   <h3>Markup</h3>
-  <pre class="code-block"><code>&lt;ol&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>data-aid="hidden"</b>&gt;hidden&lt;/a&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>data-aid="focusable"</b>&gt;focusable&lt;/a&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>data-aid="visible"</b>&gt;visible&lt;/a&gt;
-&lt;/ol&gt;</code></pre>
+  <pre class="code-block"><code>&lt;ul&gt;
+  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-hide"</b>&gt;visually hidden&lt;/a&gt;
+  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-tab"</b>&gt;visually hidden when not focused&lt;/a&gt;
+  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-replace"</b>&gt;image replacement&lt;/a&gt;
+&lt;/ul&gt;</code></pre>
 
   <h3>Output</h3>
-  <ol>
-    <li><a tabindex="0" data-aid="hidden">hidden</a>
-    <li><a tabindex="0" data-aid="focusable">focusable</a>
-    <li><a tabindex="0" data-aid="visible">visible</a>
-  </ol>
+  <ul>
+    <li><a tabindex="0" class="aid-hide">visually hidden</a>
+    <li><a tabindex="0" class="aid-tab">visually hidden when not focused</a>
+    <li><a tabindex="0" class="aid-replace">image replacement</a>
+  </ul>
 </section>
