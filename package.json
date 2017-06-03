@@ -4,6 +4,7 @@
   "description": "CSS a11y module",
   "author": "Ryan Van Etten",
   "license": "MIT",
+  "main": "aid.css",
   "keywords": [
     "a11y",
     "css",
