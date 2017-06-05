@@ -21,15 +21,6 @@
 <a href="#main" class="aid-tab">skip</a>
 ```
 
-### `.aid-see`
-- accessible background-image replacement technique
-- useful for providing alternative text to background images or sprites
-- uses `transparent` technique that affords text selection
-
-```html
-<a href="#edit" class="aid-see sprite sprite-edit">edit</a>
-```
-
 ## aria
 
 Favor `aria-label` [where supported](https://www.w3.org/TR/using-aria/#label-support) because it works without needing extra tags or CSS.

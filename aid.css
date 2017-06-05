@@ -1,10 +1,3 @@
-.aid-see:link,
-.aid-see {
-  color: transparent;
-  text-shadow: none;
-  overflow: hidden;
-}
-
 .aid-tab:not(:focus),
 .aid-say {
   border: 0;
