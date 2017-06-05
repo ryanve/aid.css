@@ -32,7 +32,7 @@
 
 ## aria
 
-ARIA attributes work well for form controls. For example you could provide voice to an icon button via an invisible span but buttons support `[aria-label]` for this purpose with less code. Favor ARIA techniques for buttons and inputs.
+[ARIA works well for form controls.](https://www.w3.org/TR/using-aria/#label-support) For example you could provide voice to an icon button via an invisible span but buttons support `[aria-label]` for this purpose with less code. Favor ARIA techniques for buttons and inputs.
 
 ### decent
 
