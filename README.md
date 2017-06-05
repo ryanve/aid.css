@@ -7,7 +7,6 @@
 
 - visually hidden but screenreader voiceover accessible
 - useful for providing spoken narration to voice listeners
-- uses [H5BP technique](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/src/css/main.css#L119-L133)
 
 ```html
 <i class="aid-say">You rock!</i>
