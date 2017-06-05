@@ -23,7 +23,7 @@
 
 ### `.aid-see`
 - accessible background-image replacement technique
-- useful for providing interactive alternative text to background images or sprites
+- useful for providing alternative text to background images or sprites
 - uses `transparent` technique that affords text selection
 
 ```html
