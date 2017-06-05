@@ -1,35 +1,54 @@
-# aid.css
-a11y utility classes
+
+# aid.css = CSS accessibility classes with intent
 
 ## classes
 
-### `.aid-hide`
-- visually hidden but screenreader accessible
-- [based on H5BP](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/src/css/main.css#L119-L133)
+### `.aid-say`
+
+- visually hidden but screenreader voiceover accessible
+- useful for providing spoken narration to voice listeners
+- uses [H5BP technique](https://github.com/h5bp/html5-boilerplate/blob/5.3.0/src/css/main.css#L119-L133)
 
 ```html
-<legend class="aid-hide">Follow your heart.</legend>
+<i class="aid-say">You rock!</i>
 ```
 
 ### `.aid-tab`
-- visually hidden like `.aid-hide` except shown as normal when focused
+- visually hidden except shown as normal when focused
 - useful for controls that you want visible when tabbed to
 
 ```html
 <a href="#main" class="aid-tab">skip</a>
 ```
 
-### `.aid-replace`
-- accessible image replacement technique
-- useful for providing alternative text to background images or sprites
-- useful for providing alternative text to icons displayed via pseudocontent
+### `.aid-see`
+- accessible background-image replacement technique
+- useful for providing interactive alternative text to background images or sprites
+- uses `transparent` technique that affords text selection
 
 ```html
-<a href="#edit" class="aid-replace icon icon-edit">edit</a>
+<a href="#edit" class="aid-see sprite sprite-edit">edit</a>
 ```
 
+## aria
+
+ARIA attributes work well for form controls. For example you could provide voice to an icon button via an invisible span but buttons support `[aria-label]` for this purpose with less code. Favor ARIA techniques for buttons and inputs.
+
+### decent
+
 ```html
-<a href="#edit" class="aid-replace sprite sprite-edit">edit</a>
+<button>
+  <i class="icon icon-edit" aria-hidden="true"></i>
+  <span class="aid-say">edit</span>
+</button>
+```
+
+### better
+
+```html
+<button aria-label="edit">
+  <i class="icon icon-edit" aria-hidden="true"></i>
+</button>
 ```
 
 ## setup
@@ -42,6 +61,6 @@ npm install aid.css
 @import "node_modules/aid.css/aid";
 ```
 
-## playground
+## contribute
 
-[Try in your browser](http://ryanve.github.io/aid.css/)
+[Please report bugs or share techniques](../../issues)
