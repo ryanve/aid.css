@@ -6,9 +6,14 @@
   "license": "MIT",
   "main": "aid.css",
   "keywords": [
-    "a11y",
     "css",
+    "a11y",
+    "voice",
     "module",
+    "voiceover",
+    "inclusive"
+    "accessible"
+    "screenreader",
     "accessibility"
   ],
   "homepage": "https://ryanve.github.io/aid.css/",

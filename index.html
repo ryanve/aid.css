@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <meta charset="utf-8">
-<title>aid.css: CSS a11y module</title>
+<title>aid.css: opensource CSS a11y module</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CSS accessibility classes with intent.">
 <link rel="stylesheet" href="aid.css">
 <link rel="stylesheet" href="style.css">
 
-<header>
-  <h1><a href="" class="highlight invert">aid<wbr>.css</a></h1>
-  <div><abbr title="accessibility">A11y</abbr> utility module</div>
-  <ul>
-    <li><a class="highlight invert" href="https://github.com/ryanve/aid.css">Github</a></li>
-    <li><a class="highlight invert" href="https://www.npmjs.com/package/aid.css">npm</a></li>
-  </ul>
+<header class="block flow">
+  <h1 class="block flow line-compact"><a href="" class="pad inline-block highlight invert">aid<wbr>.css</a></h1>
+  <a class="inline-block flow-compact pad highlight invert" href="https://github.com/ryanve/aid.css">github</a>
+  <a class="inline-block flow-compact pad highlight invert" href="https://www.npmjs.com/package/aid.css">npm</a>
+  <a class="inline-block flow-compact pad highlight invert" href="https://unpkg.com/aid.css">unpkg</a>
 </header>
 
-<section>
-  <h2>Example</h2>
-  <h3>Markup</h3>
-  <pre class="code-block"><code>&lt;ul&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-hide"</b>&gt;visually hidden&lt;/a&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-tab"</b>&gt;visually hidden when not focused&lt;/a&gt;
-  &lt;li&gt;&lt;a tabindex="0" <b>class="aid-replace"</b>&gt;image replacement&lt;/a&gt;
-&lt;/ul&gt;</code></pre>
+<figure class="block flow pad bg-white">
+  <figcaption class="block flow-compact"><code class="bold family">.aid-say</code></figcaption>
+  <figure class="block flow-compact"><code>&lt;i class="aid-say"&gt;voice only&lt;/i&gt;</code></figure>
+  <figure class="block flow-compact"><i class="aid-say">voice only</i></figure>
+</figure>
 
-  <h3>Output</h3>
-  <ul>
-    <li><a tabindex="0" class="aid-hide">visually hidden</a>
-    <li><a tabindex="0" class="aid-tab">visually hidden when not focused</a>
-    <li><a tabindex="0" class="aid-replace">image replacement</a>
-  </ul>
-</section>
+<figure class="block flow pad bg-white">
+  <figcaption class="block flow-compact"><code class="bold family">.aid-tab</code></figcaption>
+  <figure class="block flow-compact"><code>&lt;a href="#demo" class="aid-tab"&gt;voice only unless focused&lt;/a&gt;</code></figure>
+  <figure class="block flow-compact"><a href="#demo" class="aid-tab">voice only unless focused</a></figure>
+</figure>
+
+<figure class="block flow pad bg-white">
+  <figcaption class="block flow-compact"><code class="bold family">.aid-see</code></figcaption>
+  <figure class="block flow-compact"><code>&lt;a href="#demo" class="aid-see block bg-black"&gt;voice alternative for background images&lt;/a&gt;</code></figure>
+  <figure class="block flow-compact"><a href="#demo" class="aid-see block bg-black">voice alternative for background images</a></figure>
+</figure>

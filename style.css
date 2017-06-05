@@ -1,66 +1,44 @@
-:focus {
-  outline-color: magenta;
+* { box-sizing: border-box }
+:focus { outline: 3px dotted indigo }
+:link, :visited { color: indigo }
+:link:hover { text-decoration: underline }
+
+::selection { background: springgreen; color: black }
+.invert { background: black; color: silver }
+html { background: silver; color: black }
+
+html { font: 1.125em/2 sans-serif }
+@media (max-width: 20rem) {
+  html { font-size: 1em }
+  h1 { font-size: 1.25em }
 }
 
-:link,
-:visited {
-  color: magenta;
-}
+figure { margin-left: 0; margin-right: 0 }
+body { margin: 1rem auto; padding: 1rem }
 
-::selection {
-  background: black;
-  color: yellow;
-}
-
-.invert {
-  background: black;
-  color: yellow;
-}
-
-html {
-  background: yellow;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font: 1.125em/1.612 sans-serif;
-}
-
-@media (max-width: 16rem) {
-  html {
-    font-size: 1em;
-  }
-}
-
-body {
-  margin: auto;
-  padding: 1em;
-  padding: 5vmin;
-}
-
-h1, h2, h3 {
-  margin-top: 0;
-  line-height: 1;
-}
-
-header,
-section {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-.code-block {
-  white-space: pre-wrap;
-  word-break: break-word;
-}
+.line-compact { line-height: 1.25 }
+.inline-block { display: inline-block }
+.block { display: block }
+.natural { display: table }
+.no-select { user-select: none }
+.flow-compact { margin-top: 0; margin-bottom: .5rem }
+.flow { margin-top: 0; margin-bottom: 1.5rem }
+.family { font-family: inherit }
+.bold { font-weight: bold }
+.pad { padding: 1rem }
 
 .highlight {
-  padding: 0 1rem;
   text-decoration: none;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-black {
+  background: black;
+  background-size: cover;
+}
+
+.bg-white {
+  background: gainsboro;
+  background-size: cover;
 }

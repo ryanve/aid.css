@@ -1,12 +1,12 @@
-.aid-replace {
-  font-size: 0;
-  line-height: 0;
-  text-shadow: none;
+.aid-see:link,
+.aid-see {
   color: transparent;
+  text-shadow: none;
+  overflow: hidden;
 }
 
 .aid-tab:not(:focus),
-.aid-hide {
+.aid-say {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
