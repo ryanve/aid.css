@@ -32,23 +32,10 @@
 
 ## aria
 
-[ARIA works well for form controls.](https://www.w3.org/TR/using-aria/#label-support) For example you could provide voice to an icon button via an invisible span but buttons support `[aria-label]` for this purpose with less code. Favor ARIA techniques for buttons and inputs.
-
-### decent
+Favor `aria-label` [where supported](https://www.w3.org/TR/using-aria/#label-support) because it works without needing extra tags or CSS.
 
 ```html
-<button>
-  <i class="icon icon-edit" aria-hidden="true"></i>
-  <span class="aid-say">edit</span>
-</button>
-```
-
-### better
-
-```html
-<button aria-label="edit">
-  <i class="icon icon-edit" aria-hidden="true"></i>
-</button>
+<button aria-label="edit"><i class="icon icon-edit" aria-hidden="true"></i></button>
 ```
 
 ## setup
